@@ -3,7 +3,7 @@
 **browser-history-research** is a browser extension for a research
 project at USC/ISI.
 
-For more information, see the [documentation](./docs).
+For more information, see the [documentation](https://cardi.github.io/browser-history-research/).
 
 ## libraries used
 

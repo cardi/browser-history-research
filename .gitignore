@@ -1,5 +1,6 @@
 # local stuff
 *.bak
+src/_*
 
 # firefox outputs
 *.xpi
