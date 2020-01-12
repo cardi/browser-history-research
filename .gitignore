@@ -1,0 +1,10 @@
+# local stuff
+*.bak
+
+# firefox outputs
+*.xpi
+*.zip
+
+# mac stuff
+.DS_Store
+._*
