@@ -1,14 +1,69 @@
 # Browser History Research for Anti-Phishing
 
+We are conducting a research study which involves studying web browsing
+histories to discover and understand its commonalities.
+
+Specifically, we are researching the distribution of website visits and
+commonalities of website visits across users to understand if sharing
+information about phishing targets will be effective.
+
+For our experiment, we would like our volunteers to install a browser
+extension that will record their website visit history for one week,
+starting on `TODO_DATE_BEGIN`, and then share with us their anonymized
+history.
+
+## Participating in the Research Study
+
+1. Read about the research study and procedures on the informed consent form.
+2. If you wish to volunteer, sign and submit the informed consent form
+   via [Google Forms](#TODO) or [PDF](#TODO).
+3. [Install the extension](#install-the-extension)
+4. After `TODO_DATE_END`, [submit your anonymized history](#instructions-for-submission).
+
 ## Install the Extension
 
-## Instructions for Submission
+**Google Chrome/Chromium/Brave**: visit the [Chrome Web Store][chrome]
+and click on the blue "Add to Chrome".
 
-## About the Research
+**Firefox**: visit [Firefox Add-Ons][ff] and click on the blue "Add to
+Firefox".
 
-* Pending approval by USC IRB (#UP-19-XXXXX)
-* Questions about the research or extension? Email <calvin@isi.edu>.
-* Extension
-  - source code (GitHub)
-  - Firefox Add-Ons (for Firefox)
-  - Chrome Web Store (for Brave/Chrome/Chromium)
+## Using the Extension
+
+Once the extension is installed, you can click on the purple icon in your
+toolbar to open up the Research page:
+
+[![toolbar icon](img/browser-extension-icon.png?raw=true)](img/browser-extension-icon.png)
+
+The Research page has 3 sections: Truncated Browser History,
+Instructions for Submission, and About the Research.
+
+[![history page](img/browser-extension-history-th.png?raw=true)](img/browser-extension-history.png)
+
+The Truncated Browser History displays your web history and its
+anonymized form. The timestamps and anonymized domains (both in purple
+text) is what we would like you to share with us (see next section).
+
+## Submitting your Anonymized Browser History
+
+We aggregate the purple text into a structured format in Instructions
+for Submission, and provide several ways to share your data with us.
+
+On or after `TODO_DATE_END`, please follow the instructions in Instructions
+for Submission.
+
+You can uninstall the extension once submission is complete. Thank you!
+
+## About
+
+Pending approval by USC IRB (#UP-19-XXXXX).
+
+Questions about the research or extension? Email <calvin@isi.edu>.
+
+Extension:
+* [source code](https://github.com/cardi/browser-history-research) (GitHub)
+* [Firefox Add-Ons][ff] (for Firefox)
+* [Chrome Web Store][chrome] (for Brave/Chrome/Chromium)
+
+[chrome]: #TODO
+[ff]: #TODO
