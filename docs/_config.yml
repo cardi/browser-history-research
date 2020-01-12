@@ -1,2 +1,4 @@
-title: "history research"
-remote_theme: pmarsceill/just-the-docs
+title: "browser-history-research"
+
+theme: jekyll-theme-cayman
+show_downloads: false
