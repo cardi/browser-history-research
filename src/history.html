@@ -1,0 +1,171 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Browser History Research for Anti-Phishing</title>
+  <style>
+  html {
+    font-family : Helvetica, Arial, sans-serif;
+    font-size   : 100%;
+    line-height : 1.2;
+  }
+
+  div#table-container {
+    overflow: auto;
+    height: 300px;
+    border: 1px solid black;
+  }
+
+  div.container, div#table-container {
+    width: 100%;
+  }
+
+  div#content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+  }
+
+  thead {
+    /*background: #e0e0e0;
+    position: sticky;
+    top: -1px;*/
+  }
+
+  th, td {
+    padding: 0.25em 0.5em;
+  }
+
+  th {
+    background: #e0e0e0;
+    position: sticky;
+    top: 0px;
+  }
+
+  .highlight, td.cell-highlight { color: #9933ff; }
+
+  span#endDate, span#today { font-weight: bold; }
+
+  textarea, pre {
+    min-width   : 100%;
+    max-width   : 100%;
+    min-height  : 200px;
+    max-height  : 200px;
+    white-space : pre-wrap;
+    word-wrap   : break-word;
+    overflow-x  : auto;
+    overflow-y  : scroll;
+    border      : solid 1px #000000;
+    background  : #ffffff;
+    padding     : 0.5em 1em;
+    box-sizing  : border-box;
+    font-family : monospace;
+  }
+
+  button {
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 100%;
+    padding: .5em 1em;
+  }
+
+  </style>
+</head>
+<body>
+<div id="content">
+
+  <div class="container">
+  <a name="truncated-history"></a>
+  <h2>Truncated Browser History</h2>
+  <p>
+    This is your truncated history that only you can see between <span
+    id="exp-start"></span> and <span id="exp-end"></span>.  This
+    extension has taken the domain (like <tt>example.com</tt>) of
+    visited websites and anonymized it (like <tt
+    class="highlight">zzzz.com</tt>). The <span class="highlight">purple
+    text</span> is the data we'd like you to share with us for our
+    research.
+  </p>
+  <div id="table-container">
+  <table id="history">
+  <thead>
+    <tr>
+      <th>timestamp</th>
+      <th>domain</th>
+      <th></th>
+      <th>anonymized domain</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+  </table>
+  </div>
+
+  <template id="history-row">
+  <tr>
+    <td class="cell-highlight"></td>
+    <td></td>
+    <td>→</td>
+    <td class="cell-highlight"></td>
+  </tr>
+  </template>
+
+  <p>
+  Not seeing any entries above? Please check your browser history
+    settings and make sure it's enabled. On Firefox, go to Preferences
+    -&gt; Privacy &amp; Security -&gt; History -&gt; Remember History.
+  </p>
+  </div>
+
+  <div class="container">
+  <h2>Instructions for Submission</h2>
+  This is the following snippet we'd like you to share with us
+  (as generated from the <span class="highlight">purple text</span> in your <a
+    href="#truncated-history">truncated history</a>):
+  <textarea readonly id="output"></textarea>
+  <p><button id="copy">Copy to Clipboard</button></p>
+  <p>On or after <span id="endDate">January XX, 2020</span> (today is <span
+  id="today"></span>), please do the
+  following:</p>
+  <ol>
+    <li>Click on the "Copy to Clipboard" button, or manually select and
+    copy the snippet in the box above.</li>
+    <li>Send the copied text to <a href="mailto:calvin@isi.edu">calvin@isi.edu</a>, or
+    use our <a href="#">pre-filled Google Form</a> to submit.</li>
+    <li>You're all done! You can now uninstall this extension. Thank you
+    for your help!</li>
+  </ol>
+  </p>
+  </div>
+
+  <div class="container">
+  <h2>About the Research</h2>
+  <p>Pending approval by USC IRB (#UP-19-XXXXX).</p>
+  <p>Questions? Email <a href="mailto:calvin@isi.edu">calvin@isi.edu</a>,
+    or visit <a href="https://cardi.github.io/browser-history-research/">the research webpage</a>.</p>
+  <p>Extension version:
+    <span id="version"></span>.
+    <a href="https://github.com/cardi/browser-history-research">Source code</a> (GitHub),
+     <a href="#">Firefox Add-Ons</a>,
+     <a href="#">Chrome Web Store</a>.
+  </p>
+  </div>
+</div>
+<script type="application/javascript" src="lib/punycode.js"></script>
+<script type="application/javascript" src="lib/publicsuffixlist.js"></script>
+<script type="application/javascript" src="lib/browser-polyfill.js"></script>
+<script type="application/javascript" src="psl.js"></script>
+<script type="application/javascript" src="experiment.js"></script>
+<script type="application/javascript" src="history.js"></script>
+</body>
+</html>
