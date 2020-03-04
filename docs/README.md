@@ -16,7 +16,7 @@ history.
 
 1. Read about the research study and procedures on the informed consent form.
 2. If you wish to volunteer, sign and submit the informed consent form
-   via [Google Forms](#TODO) or [PDF](#TODO).
+   via [Google Forms][consent-google] or [PDF][consent-pdf].
 3. [Install the extension](#install-the-extension)
 4. On or after **March XX, 2020**, [submit your anonymized history](#instructions-for-submission).
 
@@ -69,5 +69,7 @@ Extension:
 * [Firefox Add-Ons][ff] (for Firefox)
 * [Chrome Web Store][chrome] (for Brave/Chrome/Chromium)
 
+[consent-google]: #TODO
+[consent-pdf]: #TODO
 [chrome]: #TODO
 [ff]: #TODO
