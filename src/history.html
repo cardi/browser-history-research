@@ -133,15 +133,25 @@
   (as generated from the <span class="highlight">purple text</span> in your <a
     href="#truncated-history">truncated history</a>):
   <textarea readonly id="output"></textarea>
-  <p><button id="copy">Copy to Clipboard</button></p>
-  <p>On or after <span id="endDate">January XX, 2020</span> (today is <span
-  id="today"></span>), please do the
-  following:</p>
+  <p>
+    Not seeing anything above? If your browser history is large, it
+    will take some time to load. Please wait until there's something
+    inside the box before copying or submitting.
+  </p>
+  <p>
+    <button id="copy">Copy Snippet to Clipboard</button>
+    <button id="button-submit">Open Google Forms</button>
+  </p>
+  <p>On or after <span id="endDate">March 15, 2020</span> (today is <span
+  id="today"></span>), please do the following:</p>
   <ol>
     <li>Click on the "Copy to Clipboard" button, or manually select and
     copy the snippet in the box above.</li>
     <li>Send the copied text to <a href="mailto:calvin@isi.edu">calvin@isi.edu</a>, or
-    use our <a href="#">pre-filled Google Form</a> to submit.</li>
+    use our <a id="link-submit" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfXxqzWBVca8jjTHEYtO9yA7wp1zx2Xi-Z_3Od_wuVLlBTRYg/viewform">Google Form</a> to submit.
+    If you have &gt;300 entries (you currently have <span id="numEntries"></span>)
+    or you get an error while submitting via Google Forms, please send
+    your snippet via email.</li>
     <li>You're all done! You can now uninstall this extension. Thank you
     for your help!</li>
   </ol>
@@ -150,14 +160,12 @@
 
   <div class="container">
   <h2>About the Research</h2>
-  <p>Pending approval by USC IRB (#UP-19-XXXXX).</p>
+  <p>Approved by USC IRB #UP-19-00826.</p>
   <p>Questions? Email <a href="mailto:calvin@isi.edu">calvin@isi.edu</a>,
     or visit <a href="https://cardi.github.io/browser-history-research/">the research webpage</a>.</p>
   <p>Extension version:
     <span id="version"></span>.
-    <a href="https://github.com/cardi/browser-history-research">Source code</a> (GitHub),
-     <a href="#">Firefox Add-Ons</a>,
-     <a href="#">Chrome Web Store</a>.
+    <a href="https://github.com/cardi/browser-history-research">Source code</a> (GitHub).
   </p>
   </div>
 </div>
