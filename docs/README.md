@@ -9,7 +9,7 @@ information about phishing targets will be effective.
 
 For our experiment, we would like our volunteers to install a browser
 extension that will record their website visit history for one week,
-starting on `TODO_DATE_BEGIN`, and then share with us their anonymized
+starting on **March XX, 2020**, and then share with us their anonymized
 history.
 
 ## Participating in the Research Study
@@ -18,7 +18,7 @@ history.
 2. If you wish to volunteer, sign and submit the informed consent form
    via [Google Forms](#TODO) or [PDF](#TODO).
 3. [Install the extension](#install-the-extension)
-4. After `TODO_DATE_END`, [submit your anonymized history](#instructions-for-submission).
+4. On or after **March XX, 2020**, [submit your anonymized history](#instructions-for-submission).
 
 ## Install the Extension
 
@@ -49,14 +49,18 @@ text) is what we would like you to share with us (see next section).
 We aggregate the purple text into a structured format in Instructions
 for Submission, and provide several ways to share your data with us.
 
-On or after `TODO_DATE_END`, please follow the instructions in Instructions
-for Submission.
+On or after **March XX, 2020**, please follow the instructions in
+Instructions for Submission.
 
-You can uninstall the extension once submission is complete. Thank you!
+You can uninstall the extension once submission is complete:
+* [Firefox: Disable or remove Add-ons](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+* [Chrome: Uninstall an extension](https://support.google.com/chrome_webstore/answer/2664769#uninstall-extension)
+
+Thank you!
 
 ## About
 
-Pending approval by USC IRB (#UP-19-XXXXX).
+Approved by USC IRB #UP-19-00826.
 
 Questions about the research or extension? Email <calvin@isi.edu>.
 
