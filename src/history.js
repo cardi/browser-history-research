@@ -63,36 +63,52 @@ const query = {
 };
 
 let history = browser.history.search(query);
-
+let collection = new Array();
 
 history.then( async (items) => {
   //console.debug("history:", items);
 
-  let collection = new Array();
+  let hostnames  = new Set();
 
-  for (const item of items) {
+  //for (const item of items) {
+  //await items.forEach(async function(item, index) {
+
+  // parallelize this operation
+  await Promise.all(items.map(async (item) => {
     //console.log("processing", item);
 
     // item should (have a url) and (not be an IPv{4,6} address)
-    if(!item.url) { continue; }
+    //if(!item.url) { continue; }
+    if(!item.url) { return; }
     let url = new URL(item.url);
 
-    if( (url.hostname).match(psl.ip_regexp) ) { continue; }
+    //if( (url.hostname).match(psl.ip_regexp) ) { continue; }
+    if( (url.hostname).match(psl.ip_regexp) ) { return; }
 
     // if an item doesn't have a title, we probably got a 301 redirect
-    if(item.title == "") { continue; }
+    //if(item.title == "") { continue; }
+    if(item.title == "") { return; }
 
     // build and anonymize components
     let hostname      = url.hostname;
     let anon_hostname = await anonymizeHostname(hostname);
 
+    if (hostnames.has(anon_hostname)) {
+      return;
+    } else {
+      hostnames.add(anon_hostname);
+    }
+
     // each history item might have multiple visits
     let timestamps    = new Array();
     if(item.visitCount > 1) {
+      /* add one timestamp only --- our submission process chokes if
+       * there are too many entries
       let visits = await browser.history.getVisits({url: item.url});
       for(const visit of visits) {
         timestamps.push(visit.visitTime);
-      }
+      }//*/
+      timestamps.push(item.lastVisitTime);
     } else {
       timestamps.push(item.lastVisitTime);
     }
@@ -112,14 +128,18 @@ history.then( async (items) => {
       tbody.appendChild(clone);
 
       // add entry (timestamp, anonymized hostname) to array
-      collection.push({ts: ts.toJSON(), hostname: anon_hostname});
+      //collection.push({t: ts.toJSON(), h: anon_hostname});
+      collection.push([ts.toJSON(), anon_hostname]);
     }
-  }
+  }));
+
+  console.log(collection.length);
 
   // generate json for output
   let output = document.querySelector('#output');
   output.textContent = JSON.stringify(collection);
 
+  document.getElementById("numEntries").textContent = collection.length;
   // done
 });
 
@@ -132,6 +152,31 @@ document.getElementById("copy").addEventListener("click", function() {
   text.select();
   document.execCommand("copy");
 });
+
+// button, link: open pre-filled google forms link
+function openSubmissionForm() {
+  var text = document.getElementById("output");
+  var submission = text.textContent;
+
+  var url = "https://docs.google.com/forms/d/e/1FAIpQLSfXxqzWBVca8jjTHEYtO9yA7wp1zx2Xi-Z_3Od_wuVLlBTRYg/viewform"
+
+  // a pre-filled form would be nice, but the URL can get kind of large
+  // and return 421 errors. so unfortunately we'll need to have them
+  // copy & paste the snippet to the form (or via email if it's too
+  // large). ~300 anonymized hostnames is OK, but ~500 is too large.
+
+  // attempted to do something clever, depending on how large the
+  // snippet is, but this won't work.
+  /*if(collection.length > 0 && collection.length < 300) {
+    url = "https://docs.google.com/forms/d/e/1FAIpQLSfXxqzWBVca8jjTHEYtO9yA7wp1zx2Xi-Z_3Od_wuVLlBTRYg/viewform?usp=pp_url&entry.1876093562=";
+    url += submission;
+    console.log(url);
+  }*/
+  window.open(url);
+}
+
+document.getElementById("button-submit").addEventListener("click", openSubmissionForm);
+//document.getElementById("link-submit").addEventListener("click", openSubmissionForm);
 
 // span: dates
 var options = { year: 'numeric', month: 'long', day: 'numeric' };
