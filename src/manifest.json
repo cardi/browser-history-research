@@ -2,7 +2,7 @@
   "manifest_version" : 2,
   "name"             : "browser history research",
   "version"          : "1.0.0",
-  "description"      : "This extension locally reads your browser history and anonymizes the components of the domain (for example, www.example.com to xxxx.yyyy.com), then compiles the anonymized domains and timestamps for manual (opt-in) submission.",
+  "description"      : "Reads browser history, anonymizes domain components (example.com to yyyy.com), and compiles anonymized data for manual submission",
 
   "background": {
     "scripts": ["lib/browser-polyfill.js", "experiment.js", "background.js"]
