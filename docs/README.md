@@ -9,7 +9,7 @@ information about phishing targets will be effective.
 
 For our experiment, we would like our volunteers to install a browser
 extension that will record their website visit history for one week,
-starting on **March XX, 2020**, and then share with us their anonymized
+starting on **March 18, 2020**, and then share with us their anonymized
 history.
 
 ## Participating in the Research Study
@@ -18,15 +18,14 @@ history.
 2. If you wish to volunteer, sign and submit the informed consent form
    via [Google Forms][consent-google] or [PDF][consent-pdf].
 3. [Install the extension](#install-the-extension)
-4. On or after **March XX, 2020**, [submit your anonymized history](#instructions-for-submission).
+4. On or after **March 25, 2020**, [submit your anonymized history](#instructions-for-submission).
 
 ## Install the Extension
 
 **Google Chrome/Chromium/Brave**: visit the [Chrome Web Store][chrome]
 and click on the blue "Add to Chrome".
 
-**Firefox**: visit [Firefox Add-Ons][ff] and click on the blue "Add to
-Firefox".
+**Firefox**: [click to download and install the add-on][ff].
 
 ## Using the Extension
 
@@ -49,7 +48,7 @@ text) is what we would like you to share with us (see next section).
 We aggregate the purple text into a structured format in Instructions
 for Submission, and provide several ways to share your data with us.
 
-On or after **March XX, 2020**, please follow the instructions in
+On or after **March 25, 2020**, please follow the instructions in
 Instructions for Submission.
 
 You can uninstall the extension once submission is complete:
@@ -66,10 +65,10 @@ Questions about the research or extension? Email <calvin@isi.edu>.
 
 Extension:
 * [source code](https://github.com/cardi/browser-history-research) (GitHub)
-* [Firefox Add-Ons][ff] (for Firefox)
+* [Download Firefox Add-on (.xpi)][ff] (for Firefox)
 * [Chrome Web Store][chrome] (for Brave/Chrome/Chromium)
 
 [consent-google]: #TODO
 [consent-pdf]: #TODO
 [chrome]: #TODO
-[ff]: #TODO
+[ff]: https://github.com/cardi/browser-history-research/releases/download/v1.0.1/browser-history-research-1.0.1-fx.xpi
