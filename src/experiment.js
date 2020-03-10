@@ -4,10 +4,10 @@
 
 var experiment = self.experiment = self.experiment || {};
 
-// TODO fix values after IRB approval
-experiment.start = new Date('2020-01-01T00:00:00-08:00')
-experiment.end   = new Date('2020-01-08T00:00:00-08:00')
+// experiment runs for one week
+experiment.start = new Date('2020-03-18T00:00:00-08:00')
+experiment.end   = new Date('2020-03-25T23:59:59-08:00')
 
-// XXX debugging values
-experiment.start = new Date('2020-01-01T00:00:00-08:00')
-experiment.end   = new Date('2020-01-28T00:00:00-08:00')
+// debugging values
+//experiment.start = new Date('2020-02-27T00:00:00-08:00')
+//experiment.end   = new Date('2020-04-01T00:00:00-08:00')
