@@ -1,7 +1,7 @@
 {
   "manifest_version" : 2,
   "name"             : "browser history research",
-  "version"          : "1.0.0",
+  "version"          : "1.0.1",
   "description"      : "Reads browser history, anonymizes domain components (example.com to yyyy.com), and compiles anonymized data for manual submission",
 
   "background": {
@@ -18,7 +18,8 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "browserhistoryresearch@ant.isi.edu"
+      "id": "browserhistoryresearch@ant.isi.edu",
+      "update_url": "https://raw.githubusercontent.com/cardi/browser-history-research/master/dist/firefox/updates.json"
     }
   },
 
