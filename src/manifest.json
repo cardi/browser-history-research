@@ -1,8 +1,8 @@
 {
   "manifest_version" : 2,
-  "name"             : "browser history research",
+  "name"             : "USC/ISI - browser history research project",
   "version"          : "1.0.1",
-  "description"      : "Reads browser history, anonymizes domain components (example.com to yyyy.com), and compiles anonymized data for manual submission",
+  "description"      : "Reads history, anonymizes domain components (example.com to yyyy.com), and compiles anonymized data for research project at USC.",
 
   "background": {
     "scripts": ["lib/browser-polyfill.js", "experiment.js", "background.js"]
