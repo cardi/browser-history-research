@@ -103,12 +103,12 @@ history.then( async (items) => {
     let timestamps    = new Array();
     if(item.visitCount > 1) {
       /* add one timestamp only --- our submission process chokes if
-       * there are too many entries
+       * there are too many entries */
       let visits = await browser.history.getVisits({url: item.url});
       for(const visit of visits) {
         timestamps.push(visit.visitTime);
       }//*/
-      timestamps.push(item.lastVisitTime);
+      //timestamps.push(item.lastVisitTime);
     } else {
       timestamps.push(item.lastVisitTime);
     }
@@ -139,7 +139,7 @@ history.then( async (items) => {
   let output = document.querySelector('#output');
   output.textContent = JSON.stringify(collection);
 
-  document.getElementById("numEntries").textContent = collection.length;
+  //document.getElementById("numEntries").textContent = collection.length;
   // done
 });
 
@@ -175,8 +175,18 @@ function openSubmissionForm() {
   window.open(url);
 }
 
+function saveSnippet() {
+  var text = document.getElementById("output");
+  var submission = text.textContent;
+
+  var blob = new Blob([submission], {type: "application/json;charset=utf-8"});
+  saveAs(blob, "anonymized-browser-history.json");
+}
+
 document.getElementById("button-submit").addEventListener("click", openSubmissionForm);
 //document.getElementById("link-submit").addEventListener("click", openSubmissionForm);
+
+document.getElementById("button-download").addEventListener("click", saveSnippet);
 
 // span: dates
 var options = { year: 'numeric', month: 'long', day: 'numeric' };

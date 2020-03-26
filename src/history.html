@@ -140,18 +140,24 @@
   </p>
   <p>
     <button id="copy">Copy Snippet to Clipboard</button>
+    <button id="button-download">Download Snippet</button>
     <button id="button-submit">Open Google Forms</button>
   </p>
   <p>On or after <span id="endDate">March 15, 2020</span> (today is <span
   id="today"></span>), please do the following:</p>
   <ol>
-    <li>Click on the "Copy to Clipboard" button, or manually select and
-    copy the snippet in the box above.</li>
-    <li>Send the copied text to <a href="mailto:calvin@isi.edu">calvin@isi.edu</a>, or
-    use our <a id="link-submit" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfXxqzWBVca8jjTHEYtO9yA7wp1zx2Xi-Z_3Od_wuVLlBTRYg/viewform">Google Form</a> to submit.
-    If you have &gt;300 entries (you currently have <span id="numEntries"></span>)
+    <li>Click on the "Download Snippet" button, and save the
+      <code>anonymized-browser-history.json</code> file to your computer.</li>
+    <li>Use our <a id="link-submit" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfXxqzWBVca8jjTHEYtO9yA7wp1zx2Xi-Z_3Od_wuVLlBTRYg/viewform">Google Form</a>
+    to upload and submit the previously-saved <code>anonymized-browser-history.json</code>
+    (or email it to <a href="mailto:calvin@isi.edu">calvin@isi.edu</a>).
+    <li>(<em>Alternatively</em>, you can click on the "Copy to Clipboard" button, or manually select and
+    copy the snippet in the box above, and email the copied text to <a
+    href="mailto:calvin@isi.edu">calvin@isi.edu</a>.)</li>
+    <!-- If you have &gt;300 entries (you currently have <span id="numEntries"></span>)
     or you get an error while submitting via Google Forms, please send
-    your snippet via email.</li>
+    your snippet via email. -->
+    </li>
     <li>You're all done! You can now uninstall this extension. Thank you
     for your help!</li>
   </ol>
@@ -169,6 +175,7 @@
   </p>
   </div>
 </div>
+<script type="application/javascript" src="lib/FileSaver.js"></script>
 <script type="application/javascript" src="lib/punycode.js"></script>
 <script type="application/javascript" src="lib/publicsuffixlist.js"></script>
 <script type="application/javascript" src="lib/browser-polyfill.js"></script>
