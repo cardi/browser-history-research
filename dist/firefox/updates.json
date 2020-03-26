@@ -3,9 +3,9 @@
   "browserhistoryresearch@ant.isi.edu": {
    "updates": [
     {
-     "version": "1.0.1",
-     "update_info_url": "https://github.com/cardi/browser-history-research/releases/tag/v1.0.1",
-     "update_link": "https://github.com/cardi/browser-history-research/releases/download/v1.0.1/browser-history-research-1.0.1-fx.xpi"
+     "version": "1.0.2",
+     "update_info_url": "https://github.com/cardi/browser-history-research/releases/tag/v1.0.2",
+     "update_link": "https://github.com/cardi/browser-history-research/releases/download/v1.0.2/browser-history-research-1.0.2-fx.xpi"
     }
    ]
   }

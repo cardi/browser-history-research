@@ -1,7 +1,7 @@
 {
   "manifest_version" : 2,
   "name"             : "USC/ISI - browser history research project",
-  "version"          : "1.0.1",
+  "version"          : "1.0.2",
   "description"      : "Reads history, anonymizes domain components (example.com to yyyy.com), and compiles anonymized data for research project at USC.",
 
   "background": {
