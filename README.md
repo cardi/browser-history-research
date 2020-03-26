@@ -9,6 +9,7 @@ For more information, see the [documentation](https://cardi.github.io/browser-hi
 
 | name                                | link                                             | license   |
 | ---                                 | ---                                              | ---       |
+| FileSaver.js                        | https://github.com/eligrey/FileSaver.js          | `MIT`     |
 | publicsuffixlist.js                 | https://github.com/gorhill/publicsuffixlist.js   | `GPL-3.0` |
 | punycode.js                         | https://github.com/bestiejs/punycode.js          | `MIT`     |
 | WebExtension `browser` API Polyfill | https://github.com/mozilla/webextension-polyfill | `MPL-2.0` |
