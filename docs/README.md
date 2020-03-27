@@ -9,7 +9,7 @@ information about phishing targets will be effective.
 
 For our experiment, we would like our volunteers to install a browser
 extension that will record their website visit history for one week,
-starting on **March 27, 2020** and ending on **April 3, 2020**, and then
+starting on **March 27, 2020** and ending on **April 2, 2020**, and then
 share with us their anonymized history.
 
 ## Participating in the Research Study
