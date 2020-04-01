@@ -50,18 +50,20 @@ If you agree to participate, you will be asked to do the following:
 1) Read our Informed Consent Form, which includes information on our
    study, to understand what you are agreeing to participate in:
 
-   PDF: https://cardi.github.io/browser-history-research/informed_consent_form.pdf
-   Online (via Google Forms): https://docs.google.com/forms/d/e/1FAIpQLSd_xC9gvEkuYOkNBoOdrcbwqtnMSMNA5Z8BCqOrNupVmCqO8g/viewform
+   PDF: <https://cardi.github.io/browser-history-research/informed_consent_form.pdf>
+
+   Online (via Google Forms): <https://docs.google.com/forms/d/e/1FAIpQLSd_xC9gvEkuYOkNBoOdrcbwqtnMSMNA5Z8BCqOrNupVmCqO8g/viewform>
 
 2) Install and run the browser extension during the week of March 27 --
    April 2, 2020:
 
-   Chrome: https://chrome.google.com/webstore/detail/uscisi-browser-history-re/ggnkccpdmkoophjblaokdncbdlmjbdng
-   Firefox: https://github.com/cardi/browser-history-research/releases/download/v1.0.2/browser-history-research-1.0.2-fx.xpi
+   Chrome: <https://chrome.google.com/webstore/detail/uscisi-browser-history-re/ggnkccpdmkoophjblaokdncbdlmjbdng>
+
+   Firefox: <https://github.com/cardi/browser-history-research/releases/download/v1.0.2/browser-history-research-1.0.2-fx.xpi>
 
 All of the above information can be found on our research study website:
 
-  https://cardi.github.io/browser-history-research/
+  <https://cardi.github.io/browser-history-research/>
 
 
 Below are some details.
@@ -70,7 +72,7 @@ Browser extension: An add-on for Mozilla Firefox or Chromium-based
 browsers (Google Chrome, Chromium, Brave). It can be installed by
 following the instructions here:
 
-  https://cardi.github.io/browser-history-research/.
+  <https://cardi.github.io/browser-history-research/>.
 
 The browser extension will read and encode your web browser history and
 create an output for manual submission.
@@ -98,4 +100,5 @@ Institutional Review Board (USC IRB #UP-19-00826).
 Thank you for your time!
 
 Calvin Ardi
-calvin@isi.edu
+
+<calvin@isi.edu>
