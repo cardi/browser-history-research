@@ -12,6 +12,8 @@ extension that will record their website visit history for one week,
 starting on **March 27, 2020** and ending on **April 2, 2020**, and then
 share with us their anonymized history.
 
+[Read our Call for Volunteers](call-for-volunteers.html)
+
 ## Participating in the Research Study
 
 1. Read about the research study and procedures on the informed consent form.
